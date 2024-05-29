@@ -1,0 +1,217 @@
+/* reusable */
+.capsule {
+  height: 26px;
+  line-height: 26px;
+  border-radius: 10px;
+}
+
+#navbar {
+  border: 1px solid green;
+}
+
+#main_container {
+  display: flex;
+}
+
+.container {
+  margin-bottom: 80px;
+}
+
+.sidebar-one {
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.student {
+  width: 260px;
+  height: 450px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.student img {
+  width: 80%;
+  height: 30%;
+  border-bottom: 1px solid gray;
+}
+
+.student div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* cards */
+
+/* card list */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  gap: 4%;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 576px) {
+  .card {
+    flex-basis: 38%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-basis: 100%;
+  }
+}
+
+/* individual card  */
+.card {
+  background-color: white;
+  font-size: 20px;
+  padding: 15px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+}
+
+.card__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.card__img {
+  margin-bottom: 8px;
+  height: 120px;
+}
+
+.card > div > img {
+  height: 300px;
+  max-width: 250px;
+  object-fit: cover !important;
+}
+
+.card__link {
+  font-family: "verdana", "sans-serif";
+  font-size: 15px;
+  color: #1c1c1c;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card__img {
+    flex-basis: 33%;
+    margin: 0;
+    height: auto;
+    max-height: 120px;
+  }
+
+  .card__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.card__title {
+  margin: 0;
+  color: #1c1c1c;
+  font-size: 18px;
+}
+
+.card__description {
+  font-size: 15px;
+  color: #696969;
+  line-height: 1.5;
+}
+
+.Add-cart-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.cart-button:hover {
+  background-color: #45a049;
+}
+
+nav {
+  height: 100px;
+  font-size: larger;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; /* Align items on both ends */
+  align-items: center; /* Vertically align items */
+  background-color: #29717d;
+  padding: 0 50px; /* Add padding to the sides */
+  margin-bottom: 50px;
+}
+
+
+.nav-logo img {
+  height: 60px; /* Adjusted logo size */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 15px; /* Added padding for space between links */
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+#shark {
+  display: flex;
+  flex-direction: column;
+  background-color: #29717d;
+  align-items: center; /* Center align items horizontally */
+}
+
+#shark > div > img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; /* Make image circular */
+}
+
+#shark > div > h3 {
+  color: white; /* Change text color */
+  margin-top: 10px; /* Adjust spacing */
+  font-weight: bold;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav > div > div {
+  display: flex;
+  align-items: center;
+}
+
+nav > div > div > input {
+  height: 40px; /* Increase input height */
+  outline: none;
+  background-color: transparent;
+  padding: 0 15px; /* Adjust padding */
+  font-size: 20px;
+  border-radius: 20px; /* Make input capsule shape */
+  font-family: "Dosis", sans-serif;
+}
